@@ -14,6 +14,12 @@
 
 // default is NO
 @property (nonatomic, assign) BOOL showInWindow;
+
+/**
+ *  ViewController前缀(为了区分自定义的VC和第三方VC),默认为空.Array会自动创建
+ */
+@property (nonatomic, strong, readonly) NSMutableArray *viewControllerPrefixs;
+
 @property (nonatomic, strong, readonly) UIViewController *currentViewController;
 
 @end
