@@ -8,10 +8,25 @@
 
 #import "MBProgressHUD+HDProgressHUDManager.h"
 #import "HDProgressHUDManager.h"
+#import "HDProgressHUDConfig.h"
 
 static NSBundle *_imageBundle = nil;
 
 @implementation MBProgressHUD (HDProgressHUDManager)
+
++ (UIView *)hd_GetMBProgressHUDView
+{
+    UIView *view = nil;
+    if ([HDProgressHUDConfig sharedInstance].showInWindow)
+    {
+        view = [[UIApplication sharedApplication] keyWindow];
+    }
+    else
+    {
+        view = [HDProgressHUDConfig sharedInstance].currentViewController.view;
+    }
+    return view;
+}
 
 + (void)load
 {
@@ -25,28 +40,25 @@ static NSBundle *_imageBundle = nil;
 
 + (void)showLoadingAnimation
 {
-    [MBProgressHUD showHUDAddedTo:[[UIApplication sharedApplication] keyWindow] animated:YES];
+    [MBProgressHUD showHUDAddedTo:[self hd_GetMBProgressHUDView] animated:YES];
 }
 
 + (void)showLoadingAnimationWithMessage:(NSString *)message
 {
-    MBProgressHUD *hud =
-        [MBProgressHUD showHUDAddedTo:[[UIApplication sharedApplication] keyWindow] animated:YES];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:[self hd_GetMBProgressHUDView] animated:YES];
     hud.labelText = message;
 }
 
 + (void)showLoadingAnimationWithProgress:(CGFloat)progress
 {
-    MBProgressHUD *hud =
-        [MBProgressHUD showHUDAddedTo:[[UIApplication sharedApplication] keyWindow] animated:YES];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:[self hd_GetMBProgressHUDView] animated:YES];
     hud.mode = MBProgressHUDModeDeterminate;
     hud.progress = progress;
 }
 
 + (void)showLoadingAnimationWithProgress:(CGFloat)progress message:(NSString *)message
 {
-    MBProgressHUD *hud =
-        [MBProgressHUD showHUDAddedTo:[[UIApplication sharedApplication] keyWindow] animated:YES];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:[self hd_GetMBProgressHUDView] animated:YES];
     hud.mode = MBProgressHUDModeDeterminate;
     hud.labelText = message;
     hud.progress = progress;
@@ -82,8 +94,7 @@ static NSBundle *_imageBundle = nil;
 
 + (void)showLoadingAnimationWithImage:(UIImage *)image message:(NSString *)message
 {
-    MBProgressHUD *hud =
-        [MBProgressHUD showHUDAddedTo:[[UIApplication sharedApplication] keyWindow] animated:YES];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:[self hd_GetMBProgressHUDView] animated:YES];
     hud.mode = MBProgressHUDModeCustomView;
     hud.customView = [[UIImageView alloc] initWithImage:image];
     hud.labelText = message;
@@ -92,7 +103,7 @@ static NSBundle *_imageBundle = nil;
 
 + (void)hideLoadingAnimation
 {
-    [self hideAllHUDsForView:[[UIApplication sharedApplication] keyWindow] animated:YES];
+    [self hideAllHUDsForView:[self hd_GetMBProgressHUDView] animated:YES];
 }
 
 @end

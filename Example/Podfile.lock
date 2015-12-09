@@ -1,13 +1,15 @@
 PODS:
-  - HaidoraProgressHUDManager (0.1.0):
-    - HaidoraProgressHUDManager/Core (= 0.1.0)
-    - HaidoraProgressHUDManager/MBProgressHUD (= 0.1.0)
-    - HaidoraProgressHUDManager/SVProgressHUD (= 0.1.0)
-  - HaidoraProgressHUDManager/Core (0.1.0)
-  - HaidoraProgressHUDManager/MBProgressHUD (0.1.0):
+  - Aspects (1.4.1)
+  - HaidoraProgressHUDManager (0.1.1):
+    - HaidoraProgressHUDManager/Core (= 0.1.1)
+    - HaidoraProgressHUDManager/MBProgressHUD (= 0.1.1)
+    - HaidoraProgressHUDManager/SVProgressHUD (= 0.1.1)
+  - HaidoraProgressHUDManager/Core (0.1.1):
+    - Aspects
+  - HaidoraProgressHUDManager/MBProgressHUD (0.1.1):
     - HaidoraProgressHUDManager/Core
     - MBProgressHUD
-  - HaidoraProgressHUDManager/SVProgressHUD (0.1.0):
+  - HaidoraProgressHUDManager/SVProgressHUD (0.1.1):
     - HaidoraProgressHUDManager/Core
     - SVProgressHUD
   - MBProgressHUD (0.9.1)
@@ -21,8 +23,9 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  HaidoraProgressHUDManager: 3f16f90c03e3f3f631406033bad055ac897d7c46
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  HaidoraProgressHUDManager: 723f23c42f1e4c3673f5613e4280875f6ef85f57
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0
