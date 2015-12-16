@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "HaidoraProgressHUDProtocol.h"
 
 /**
@@ -14,23 +15,11 @@
  */
 @interface HDProgressHUDManager : NSObject
 
-// show loading animation
-+ (void)showLoadingAnimation;
-+ (void)showLoadingAnimationWithMessage:(NSString *)message;
-+ (void)showLoadingAnimationWithProgress:(CGFloat)progress;
-+ (void)showLoadingAnimationWithProgress:(CGFloat)progress message:(NSString *)message;
-
-// show loading animation for special
-+ (void)showSuccessAnimation;
-+ (void)showSuccessAnimationWithMessage:(NSString *)message;
-+ (void)showErrorAnimation;
-+ (void)showErrorAnimationWithMessage:(NSString *)message;
-+ (void)showLoadingAnimationWithImage:(UIImage *)image message:(NSString *)message;
-
-// hidden
-+ (void)hideLoadingAnimation;
-
 // config
 + (void)setProgressHUDClass:(Class<HaidoraProgressHUDProtocol>)progressHUDClass;
+
+@end
+
+@interface HDProgressHUDManager (HaidoraProgressHUDProtocol) <HaidoraProgressHUDProtocol>
 
 @end

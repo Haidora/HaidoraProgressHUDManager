@@ -9,10 +9,10 @@
 #import "HDProgressHUDManager.h"
 #import <objc/runtime.h>
 
-static Class<HaidoraProgressHUDProtocol> _progressHUDClass = nil;
+static Class<HaidoraProgressHUDProtocol, NSObject> _progressHUDClass = nil;
 @implementation HDProgressHUDManager
 
-+ (void)setProgressHUDClass:(Class<HaidoraProgressHUDProtocol>)progressHUDClass
++ (void)setProgressHUDClass:(Class<HaidoraProgressHUDProtocol, NSObject>)progressHUDClass
 {
     Class tempClass = progressHUDClass;
     if ([[[tempClass alloc] init] conformsToProtocol:@protocol(HaidoraProgressHUDProtocol)])
@@ -26,6 +26,11 @@ static Class<HaidoraProgressHUDProtocol> _progressHUDClass = nil;
     }
 }
 
+@end
+
+@implementation HDProgressHUDManager (HaidoraProgressHUDProtocol)
+
+// show loading animation
 + (void)showLoadingAnimation
 {
     [_progressHUDClass showLoadingAnimation];
@@ -36,14 +41,37 @@ static Class<HaidoraProgressHUDProtocol> _progressHUDClass = nil;
     [_progressHUDClass showLoadingAnimationWithMessage:message];
 }
 
-+ (void)showLoadingAnimationWithProgress:(CGFloat)progress
++ (void)showLoadingAnimationWithImage:(UIImage *)image message:(NSString *)message
 {
-    [_progressHUDClass showLoadingAnimationWithProgress:progress];
+    [_progressHUDClass showLoadingAnimationWithImage:image message:message];
 }
 
-+ (void)showLoadingAnimationWithProgress:(CGFloat)progress message:(NSString *)message
++ (void)showLoadingAnimationInView:(UIView *)view
 {
-    [_progressHUDClass showLoadingAnimationWithProgress:progress message:message];
+    [_progressHUDClass showLoadingAnimationInView:view];
+}
+
++ (void)showLoadingAnimationWithMessage:(NSString *)message inView:(UIView *)view
+{
+    [_progressHUDClass showLoadingAnimationWithMessage:message inView:view];
+}
+
++ (void)showLoadingAnimationWithImage:(UIImage *)image
+                              message:(NSString *)message
+                               inView:(UIView *)view
+{
+    [_progressHUDClass showLoadingAnimationWithImage:image message:message inView:view];
+}
+
+// hidden
++ (void)hideLoadingAnimation
+{
+    [_progressHUDClass hideLoadingAnimation];
+}
+
++ (void)hideLoadingAnimationInView:(UIView *)view
+{
+    [_progressHUDClass hideLoadingAnimationInView:view];
 }
 
 + (void)showSuccessAnimation
@@ -66,14 +94,24 @@ static Class<HaidoraProgressHUDProtocol> _progressHUDClass = nil;
     [_progressHUDClass showErrorAnimationWithMessage:message];
 }
 
-+ (void)showLoadingAnimationWithImage:(UIImage *)image message:(NSString *)message
++ (void)showSuccessAnimationInView:(UIView *)view
 {
-    [_progressHUDClass showLoadingAnimationWithImage:image message:message];
+    [_progressHUDClass showSuccessAnimationInView:view];
 }
 
-+ (void)hideLoadingAnimation
++ (void)showSuccessAnimationWithMessage:(NSString *)message inView:(UIView *)view
 {
-    [_progressHUDClass hideLoadingAnimation];
+    [_progressHUDClass showSuccessAnimationWithMessage:message inView:view];
+}
+
++ (void)showErrorAnimationInView:(UIView *)view
+{
+    [_progressHUDClass showErrorAnimationInView:view];
+}
+
++ (void)showErrorAnimationWithMessage:(NSString *)message inView:(UIView *)view
+{
+    [_progressHUDClass showErrorAnimationWithMessage:message inView:view];
 }
 
 @end

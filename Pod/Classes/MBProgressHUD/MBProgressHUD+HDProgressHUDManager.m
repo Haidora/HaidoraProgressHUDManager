@@ -8,25 +8,10 @@
 
 #import "MBProgressHUD+HDProgressHUDManager.h"
 #import "HDProgressHUDManager.h"
-#import "HDProgressHUDConfig.h"
 
 static NSBundle *_imageBundle = nil;
 
 @implementation MBProgressHUD (HDProgressHUDManager)
-
-+ (UIView *)hd_GetMBProgressHUDView
-{
-    UIView *view = nil;
-    if ([HDProgressHUDConfig sharedInstance].showInWindow)
-    {
-        view = [[UIApplication sharedApplication] keyWindow];
-    }
-    else
-    {
-        view = [HDProgressHUDConfig sharedInstance].currentViewController.view;
-    }
-    return view;
-}
 
 + (void)load
 {
@@ -38,72 +23,112 @@ static NSBundle *_imageBundle = nil;
     [HDProgressHUDManager setProgressHUDClass:[self class]];
 }
 
+// show loading animation
 + (void)showLoadingAnimation
 {
-    [MBProgressHUD showHUDAddedTo:[self hd_GetMBProgressHUDView] animated:YES];
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    [self showLoadingAnimationInView:window];
 }
 
 + (void)showLoadingAnimationWithMessage:(NSString *)message
 {
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:[self hd_GetMBProgressHUDView] animated:YES];
-    hud.labelText = message;
-}
-
-+ (void)showLoadingAnimationWithProgress:(CGFloat)progress
-{
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:[self hd_GetMBProgressHUDView] animated:YES];
-    hud.mode = MBProgressHUDModeDeterminate;
-    hud.progress = progress;
-}
-
-+ (void)showLoadingAnimationWithProgress:(CGFloat)progress message:(NSString *)message
-{
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:[self hd_GetMBProgressHUDView] animated:YES];
-    hud.mode = MBProgressHUDModeDeterminate;
-    hud.labelText = message;
-    hud.progress = progress;
-}
-
-+ (void)showSuccessAnimation
-{
-    UIImage *image =
-        [UIImage imageWithContentsOfFile:[_imageBundle pathForResource:@"success" ofType:@"png"]];
-    [self showLoadingAnimationWithImage:image message:nil];
-}
-
-+ (void)showSuccessAnimationWithMessage:(NSString *)message
-{
-    UIImage *image =
-        [UIImage imageWithContentsOfFile:[_imageBundle pathForResource:@"success" ofType:@"png"]];
-    [self showLoadingAnimationWithImage:image message:message];
-}
-
-+ (void)showErrorAnimation
-{
-    UIImage *image =
-        [UIImage imageWithContentsOfFile:[_imageBundle pathForResource:@"error" ofType:@"png"]];
-    [self showLoadingAnimationWithImage:image message:nil];
-}
-
-+ (void)showErrorAnimationWithMessage:(NSString *)message
-{
-    UIImage *image =
-        [UIImage imageWithContentsOfFile:[_imageBundle pathForResource:@"error" ofType:@"png"]];
-    [self showLoadingAnimationWithImage:image message:message];
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    [self showLoadingAnimationWithMessage:message inView:window];
 }
 
 + (void)showLoadingAnimationWithImage:(UIImage *)image message:(NSString *)message
 {
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:[self hd_GetMBProgressHUDView] animated:YES];
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    [self showLoadingAnimationWithImage:image message:message inView:window];
+}
+
++ (void)showLoadingAnimationInView:(UIView *)view
+{
+    [MBProgressHUD showHUDAddedTo:view animated:YES];
+}
+
++ (void)showLoadingAnimationWithMessage:(NSString *)message inView:(UIView *)view
+{
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
+    hud.labelText = message;
+}
+
++ (void)showLoadingAnimationWithImage:(UIImage *)image
+                              message:(NSString *)message
+                               inView:(UIView *)view
+{
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     hud.mode = MBProgressHUDModeCustomView;
     hud.customView = [[UIImageView alloc] initWithImage:image];
     hud.labelText = message;
     [hud show:YES];
 }
 
+// hidden
 + (void)hideLoadingAnimation
 {
-    [self hideAllHUDsForView:[self hd_GetMBProgressHUDView] animated:YES];
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    [self hideLoadingAnimationInView:window];
+}
+
++ (void)hideLoadingAnimationInView:(UIView *)view
+{
+    [self hideHUDForView:view animated:YES];
+}
+
++ (void)showSuccessAnimation
+{
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    [self showSuccessAnimationInView:window];
+}
+
++ (void)showSuccessAnimationWithMessage:(NSString *)message
+{
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    [self showSuccessAnimationWithMessage:message inView:window];
+}
+
++ (void)showErrorAnimation
+{
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    [self showErrorAnimationInView:window];
+}
+
++ (void)showErrorAnimationWithMessage:(NSString *)message
+{
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    [self showErrorAnimationWithMessage:message inView:window];
+}
+
++ (void)showSuccessAnimationInView:(UIView *)view
+{
+    UIImage *image =
+        [UIImage imageWithContentsOfFile:[_imageBundle pathForResource:@"success" ofType:@"png"]];
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    [self showLoadingAnimationWithImage:image message:nil inView:window];
+}
+
++ (void)showSuccessAnimationWithMessage:(NSString *)message inView:(UIView *)view
+{
+    UIImage *image =
+        [UIImage imageWithContentsOfFile:[_imageBundle pathForResource:@"success" ofType:@"png"]];
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    [self showLoadingAnimationWithImage:image message:nil inView:window];
+}
+
++ (void)showErrorAnimationInView:(UIView *)view
+{
+    UIImage *image =
+        [UIImage imageWithContentsOfFile:[_imageBundle pathForResource:@"error" ofType:@"png"]];
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    [self showLoadingAnimationWithImage:image message:nil inView:window];
+}
+
++ (void)showErrorAnimationWithMessage:(NSString *)message inView:(UIView *)view
+{
+    UIImage *image =
+        [UIImage imageWithContentsOfFile:[_imageBundle pathForResource:@"error" ofType:@"png"]];
+    [self showLoadingAnimationWithImage:image message:message inView:view];
 }
 
 @end

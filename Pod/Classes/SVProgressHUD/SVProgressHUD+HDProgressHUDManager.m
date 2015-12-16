@@ -16,54 +16,96 @@
     [HDProgressHUDManager setProgressHUDClass:[self class]];
 }
 
+// show loading animation
 + (void)showLoadingAnimation
 {
-    [self show];
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    [self showLoadingAnimationInView:window];
 }
 
 + (void)showLoadingAnimationWithMessage:(NSString *)message
 {
-    [self showWithStatus:message];
-}
-
-+ (void)showLoadingAnimationWithProgress:(CGFloat)progress
-{
-    [self showProgress:progress];
-}
-
-+ (void)showLoadingAnimationWithProgress:(CGFloat)progress message:(NSString *)message
-{
-    [self showProgress:progress status:message];
-}
-
-+ (void)showSuccessAnimation
-{
-    [self showSuccessWithStatus:nil];
-}
-
-+ (void)showSuccessAnimationWithMessage:(NSString *)message
-{
-    [self showSuccessWithStatus:message];
-}
-
-+ (void)showErrorAnimation
-{
-    [self showErrorWithStatus:nil];
-}
-
-+ (void)showErrorAnimationWithMessage:(NSString *)message
-{
-    [self showErrorWithStatus:message];
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    [self showLoadingAnimationWithMessage:message inView:window];
 }
 
 + (void)showLoadingAnimationWithImage:(UIImage *)image message:(NSString *)message
 {
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    [self showLoadingAnimationWithImage:image message:message inView:window];
+}
+
++ (void)showLoadingAnimationInView:(UIView *)view
+{
+    [self show];
+}
+
++ (void)showLoadingAnimationWithMessage:(NSString *)message inView:(UIView *)view
+{
+    [self showWithStatus:message];
+}
+
++ (void)showLoadingAnimationWithImage:(UIImage *)image
+                              message:(NSString *)message
+                               inView:(UIView *)view
+{
     [self showImage:image status:message];
 }
 
+// hidden
 + (void)hideLoadingAnimation
 {
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    [self hideLoadingAnimationInView:window];
+}
+
++ (void)hideLoadingAnimationInView:(UIView *)view
+{
     [self dismiss];
+}
+
++ (void)showSuccessAnimation
+{
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    [self showSuccessAnimationInView:window];
+}
+
++ (void)showSuccessAnimationWithMessage:(NSString *)message
+{
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    [self showSuccessAnimationWithMessage:message inView:window];
+}
+
++ (void)showErrorAnimation
+{
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    [self showErrorAnimationInView:window];
+}
+
++ (void)showErrorAnimationWithMessage:(NSString *)message
+{
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    [self showErrorAnimationWithMessage:message inView:window];
+}
+
++ (void)showSuccessAnimationInView:(UIView *)view
+{
+    [self showSuccessWithStatus:nil];
+}
+
++ (void)showSuccessAnimationWithMessage:(NSString *)message inView:(UIView *)view
+{
+    [self showSuccessWithStatus:message];
+}
+
++ (void)showErrorAnimationInView:(UIView *)view
+{
+    [self showErrorWithStatus:nil];
+}
+
++ (void)showErrorAnimationWithMessage:(NSString *)message inView:(UIView *)view
+{
+    [self showErrorWithStatus:message];
 }
 
 @end
