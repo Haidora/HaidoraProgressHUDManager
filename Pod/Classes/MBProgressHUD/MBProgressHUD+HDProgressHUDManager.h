@@ -6,7 +6,7 @@
 //
 //
 
-#import "MBProgressHUD.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 #import "HaidoraProgressHUDProtocol.h"
 
 @interface MBProgressHUD (HDProgressHUDManager) <HaidoraProgressHUDProtocol>

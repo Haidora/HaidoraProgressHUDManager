@@ -7,7 +7,7 @@
 //
 
 #import "HDViewController.h"
-#import <HaidoraProgressHUDManager.h>
+#import <HaidoraProgressHUDManager/HaidoraProgressHUDManager.h>
 #import <HaidoraProgressHUDManager/MBProgressHUD+HDProgressHUDManager.h>
 
 @interface HDViewController ()
@@ -31,20 +31,20 @@
         dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
           [HDProgressHUDManager hideLoadingAnimation];
           [HDProgressHUDManager showLoadingAnimationWithMessage:@"1"];
-          dispatch_after(
-              dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)),
-              dispatch_get_main_queue(), ^{
-                [HDProgressHUDManager hideLoadingAnimation];
-                dispatch_after(
-                    dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)),
-                    dispatch_get_main_queue(), ^{
-                      [HDProgressHUDManager hideLoadingAnimation];
-                      dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)),
+          dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)),
+                         dispatch_get_main_queue(), ^{
+                           [HDProgressHUDManager hideLoadingAnimation];
+                           dispatch_after(
+                               dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)),
+                               dispatch_get_main_queue(), ^{
+                                 [HDProgressHUDManager hideLoadingAnimation];
+                                 dispatch_after(
+                                     dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)),
                                      dispatch_get_main_queue(), ^{
                                        [HDProgressHUDManager hideLoadingAnimation];
                                      });
-                    });
-              });
+                               });
+                         });
         });
 
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(12 * NSEC_PER_SEC)),

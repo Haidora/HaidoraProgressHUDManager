@@ -6,7 +6,7 @@
 //
 //
 
-#import "SVProgressHUD.h"
+#import <SVProgressHUD/SVProgressHUD.h>
 #import "HaidoraProgressHUDProtocol.h"
 
 @interface SVProgressHUD (HDProgressHUDManager) <HaidoraProgressHUDProtocol>
