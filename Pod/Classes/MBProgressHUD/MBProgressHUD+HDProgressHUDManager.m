@@ -104,24 +104,21 @@ static NSBundle *_imageBundle = nil;
 {
     UIImage *image =
         [UIImage imageWithContentsOfFile:[_imageBundle pathForResource:@"success" ofType:@"png"]];
-    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
-    [self showLoadingAnimationWithImage:image message:nil inView:window];
+    [self showLoadingAnimationWithImage:image message:nil inView:view];
 }
 
 + (void)showSuccessAnimationWithMessage:(NSString *)message inView:(UIView *)view
 {
     UIImage *image =
         [UIImage imageWithContentsOfFile:[_imageBundle pathForResource:@"success" ofType:@"png"]];
-    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
-    [self showLoadingAnimationWithImage:image message:nil inView:window];
+    [self showLoadingAnimationWithImage:image message:nil inView:view];
 }
 
 + (void)showErrorAnimationInView:(UIView *)view
 {
     UIImage *image =
         [UIImage imageWithContentsOfFile:[_imageBundle pathForResource:@"error" ofType:@"png"]];
-    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
-    [self showLoadingAnimationWithImage:image message:nil inView:window];
+    [self showLoadingAnimationWithImage:image message:nil inView:view];
 }
 
 + (void)showErrorAnimationWithMessage:(NSString *)message inView:(UIView *)view
