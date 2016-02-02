@@ -1,0 +1,6 @@
+framework module HaidoraProgressHUDManager {
+  umbrella header "HaidoraProgressHUDManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

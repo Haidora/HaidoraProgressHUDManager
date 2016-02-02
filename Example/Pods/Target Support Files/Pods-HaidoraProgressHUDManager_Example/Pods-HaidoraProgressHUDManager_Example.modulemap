@@ -1,0 +1,6 @@
+framework module Pods_HaidoraProgressHUDManager_Example {
+  umbrella header "Pods-HaidoraProgressHUDManager_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

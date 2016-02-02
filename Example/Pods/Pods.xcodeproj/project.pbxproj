@@ -1,0 +1,1037 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0557F00239885AEF8CC9CF95C95D170B /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6342EF42A636CDEB45DD4CCB631C3691 /* SVProgressHUD.m */; };
+		22C680F80D578C036CF300FCC9B881AD /* HUDType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B7B07D74CD84CAC533606931BB078B /* HUDType.swift */; };
+		2C25D67CED3C320685529B7379745F92 /* Pods-HaidoraProgressHUDManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3746DC9DD0287BC5FB3083025FAC14F /* Pods-HaidoraProgressHUDManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30871730DF6F04494FFDB883451E1B35 /* Pods-HaidoraProgressHUDManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 865146E6716CBBD6B71BE4E3D2454363 /* Pods-HaidoraProgressHUDManager_Tests-dummy.m */; };
+		31E747AD6F892130A494AFCCACF7FAC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C00C70E7EB8A1BAA709F6A57DAC2E40 /* Foundation.framework */; };
+		3C514F8DE562CAD9094C5A114DDFA612 /* Pods-HaidoraProgressHUDManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 08828059B64CD3A5F919A8C030591129 /* Pods-HaidoraProgressHUDManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D262301C85175CBFD2EC585DF938B75 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222B9B0327637971894449A97DA606C6 /* SVProgressHUD.framework */; };
+		449815399B3AB411AD5BD3669399D554 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C00C70E7EB8A1BAA709F6A57DAC2E40 /* Foundation.framework */; };
+		4997D897D34F01C296B9983F67713BD4 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 186F271C6E68F44594F88CE102849823 /* SVProgressHUD-dummy.m */; };
+		49BC6DD7E0BBD296266D92C6BE771C19 /* HaidoraProgressHUDManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9D556CB938775E51D7875F85301989 /* HaidoraProgressHUDManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C395E0323E23F84DA3D6C019D1188A8 /* SVProgressHUD+HUDType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73354C6C868A0D8F5CECB14479BBC47F /* SVProgressHUD+HUDType.swift */; };
+		63D31F81C20E1DBD232CFA033E2235C8 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B7DCEFCC4D3DAD9AE7D0DAFDE70AD64D /* SVProgressHUD.bundle */; };
+		6F26DA1574D941E4AD5A8150EC10F145 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DD9D38E41C18B2F64F3CFA87C91B6 /* SVIndefiniteAnimatedView.m */; };
+		74ADB6FB7AA2882B33E98D00A68F6686 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB31E5AF8107D9D1643EE0B8E9225D7 /* QuartzCore.framework */; };
+		8B9F128A740B1B70A65B5BC45BD7D43A /* HUDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F185ECD102F6F3A9E770A34940A5594C /* HUDManager.swift */; };
+		9C69E5E2A821D2A1813425A8C056A79E /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 581058A2BDFC3E152E25568CB63D1AA4 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1CF638D420918A3CDC874315F135642 /* HaidoraProgressHUDManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C731E45859C7FB042E861E3C2566CB7A /* HaidoraProgressHUDManager.bundle */; };
+		B9EC1202DC4718BDD6BDBD87E44497F5 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E705C113EFE3BE631AFE26BB982A106 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C93A14B140CDDB9954C22327427EF986 /* Pods-HaidoraProgressHUDManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB39764C502A67C1F4C1BF6A599A234 /* Pods-HaidoraProgressHUDManager_Example-dummy.m */; };
+		E372795118A42DC1AC4F4044447B13A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C00C70E7EB8A1BAA709F6A57DAC2E40 /* Foundation.framework */; };
+		E6FC0B9A2A83F8749B03640E2776BA6B /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 92A91D14862B4D30DB13B14CD2B4E6A7 /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE52E2F1ADF166D3CECF270D361D7C8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C00C70E7EB8A1BAA709F6A57DAC2E40 /* Foundation.framework */; };
+		FEE9CD57C5E1BD8A5FB270A13498937D /* HaidoraProgressHUDManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D3BF97790E3E98E71BA27D99192484 /* HaidoraProgressHUDManager-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0BDC661694E3C1D1368755BCB5181C71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B579623B7EE0963F9C5B130BD23B35;
+			remoteInfo = SVProgressHUD;
+		};
+		33F0B1C37793700FDF03222C9D5A696B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 453642B2B3DF22C4D2FAE9592A0A2F14;
+			remoteInfo = "HaidoraProgressHUDManager-HaidoraProgressHUDManager";
+		};
+		54DC43EE44E95C0026DEC73038DBA97D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89408A66C39F32DD7BC86603F5B2AAA5;
+			remoteInfo = HaidoraProgressHUDManager;
+		};
+		57EC026EDE2E95A9A22C0D937B799970 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89408A66C39F32DD7BC86603F5B2AAA5;
+			remoteInfo = HaidoraProgressHUDManager;
+		};
+		C4EC85169AB71BEDE34E88DFAABDFD16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B579623B7EE0963F9C5B130BD23B35;
+			remoteInfo = SVProgressHUD;
+		};
+		F29FA2A276B44B50C41A7D0B130604A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B579623B7EE0963F9C5B130BD23B35;
+			remoteInfo = SVProgressHUD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00F8C9E63F53803BA1982F3C3ACECDC1 /* Pods-HaidoraProgressHUDManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HaidoraProgressHUDManager_Tests.modulemap"; sourceTree = "<group>"; };
+		08828059B64CD3A5F919A8C030591129 /* Pods-HaidoraProgressHUDManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HaidoraProgressHUDManager_Tests-umbrella.h"; sourceTree = "<group>"; };
+		0C033C27702A45267062D9E1AE213392 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CC6624CAF76C66C4ED1D314731B7F3A /* Pods-HaidoraProgressHUDManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HaidoraProgressHUDManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		14D2B478F9D74F34CBD3025802C06A0B /* Pods-HaidoraProgressHUDManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HaidoraProgressHUDManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		17DA3E4D8E095257AFFA0E5A270E2DE4 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		186F271C6E68F44594F88CE102849823 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		222B9B0327637971894449A97DA606C6 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22B7B07D74CD84CAC533606931BB078B /* HUDType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HUDType.swift; sourceTree = "<group>"; };
+		27C6326298E35DA2CD62003C729A31C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		346362F612249EC468B1EC5F96EE50AE /* HaidoraProgressHUDManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HaidoraProgressHUDManager.xcconfig; sourceTree = "<group>"; };
+		3E705C113EFE3BE631AFE26BB982A106 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		41D3BF97790E3E98E71BA27D99192484 /* HaidoraProgressHUDManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HaidoraProgressHUDManager-dummy.m"; sourceTree = "<group>"; };
+		45CD2DEF53D36B85F7512A68891AED0F /* Pods-HaidoraProgressHUDManager_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HaidoraProgressHUDManager_Tests-resources.sh"; sourceTree = "<group>"; };
+		5054EE6B5A2861C5116A7D73D7DCE261 /* Pods-HaidoraProgressHUDManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HaidoraProgressHUDManager_Example.release.xcconfig"; sourceTree = "<group>"; };
+		568443D4FB5E65296A6B5BFBBE846C6C /* Pods-HaidoraProgressHUDManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HaidoraProgressHUDManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		579DD9D38E41C18B2F64F3CFA87C91B6 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		581058A2BDFC3E152E25568CB63D1AA4 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		5F74BCB1B1DFCCF1F6F8F8BC614314FD /* Pods-HaidoraProgressHUDManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HaidoraProgressHUDManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6342EF42A636CDEB45DD4CCB631C3691 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		65400C3EE944597103E60D24A2830BE8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		659D8B073C6647B2A8FD62969A97D1B2 /* HaidoraProgressHUDManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HaidoraProgressHUDManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73354C6C868A0D8F5CECB14479BBC47F /* SVProgressHUD+HUDType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SVProgressHUD+HUDType.swift"; sourceTree = "<group>"; };
+		73CBF8763CD85F8CBA48EA2D51BC08E0 /* Pods-HaidoraProgressHUDManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HaidoraProgressHUDManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		7C00C70E7EB8A1BAA709F6A57DAC2E40 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7DE1E75AEFB975E915AE6662BF68FC41 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FA0DED0E2709E060CD3B6892844E549 /* HaidoraProgressHUDManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HaidoraProgressHUDManager-prefix.pch"; sourceTree = "<group>"; };
+		865146E6716CBBD6B71BE4E3D2454363 /* Pods-HaidoraProgressHUDManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HaidoraProgressHUDManager_Tests-dummy.m"; sourceTree = "<group>"; };
+		89711DB3FD0210DFAEDA93299DC6757B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B79104D0B18E2B8AB17DAECF3EFA371 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
+		8EF5C336D7ADB21FF90C40F92184563C /* Pods-HaidoraProgressHUDManager_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HaidoraProgressHUDManager_Example-resources.sh"; sourceTree = "<group>"; };
+		92A91D14862B4D30DB13B14CD2B4E6A7 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		9BE24DC78C8449053A8B7102522B56E7 /* HaidoraProgressHUDManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HaidoraProgressHUDManager.modulemap; sourceTree = "<group>"; };
+		9CB39764C502A67C1F4C1BF6A599A234 /* Pods-HaidoraProgressHUDManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HaidoraProgressHUDManager_Example-dummy.m"; sourceTree = "<group>"; };
+		9D7768B03693B4921AF058DA3870F607 /* Pods-HaidoraProgressHUDManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HaidoraProgressHUDManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B7DCEFCC4D3DAD9AE7D0DAFDE70AD64D /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C731E45859C7FB042E861E3C2566CB7A /* HaidoraProgressHUDManager.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaidoraProgressHUDManager.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8FB9CC1AD7E2179F41EC5F7C25DDE10 /* Pods_HaidoraProgressHUDManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaidoraProgressHUDManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCB31E5AF8107D9D1643EE0B8E9225D7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		CD2D243CA59FBD4CE368D33EC049BA65 /* Pods-HaidoraProgressHUDManager_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HaidoraProgressHUDManager_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		CE3ECDCD8EB918D941ABB399D6DEE449 /* Pods-HaidoraProgressHUDManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HaidoraProgressHUDManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CEF4533C96355439CE0E9C1FC2B1EFF3 /* Pods-HaidoraProgressHUDManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HaidoraProgressHUDManager_Example-frameworks.sh"; sourceTree = "<group>"; };
+		DA9D556CB938775E51D7875F85301989 /* HaidoraProgressHUDManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HaidoraProgressHUDManager-umbrella.h"; sourceTree = "<group>"; };
+		DE0B20A3000B598818CABA2873591C4E /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		E3746DC9DD0287BC5FB3083025FAC14F /* Pods-HaidoraProgressHUDManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HaidoraProgressHUDManager_Example-umbrella.h"; sourceTree = "<group>"; };
+		F185ECD102F6F3A9E770A34940A5594C /* HUDManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HUDManager.swift; sourceTree = "<group>"; };
+		F31271685C742A979E1763D7EDF727A1 /* Pods-HaidoraProgressHUDManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HaidoraProgressHUDManager_Example.modulemap"; sourceTree = "<group>"; };
+		FEB719CC7B7F7942A30B8B1C6440D0AA /* Pods_HaidoraProgressHUDManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaidoraProgressHUDManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BDC5401856FC4A11F102912C4BB40E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E372795118A42DC1AC4F4044447B13A8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8343AF2049191D2538FD24C64D6712B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31E747AD6F892130A494AFCCACF7FAC1 /* Foundation.framework in Frameworks */,
+				74ADB6FB7AA2882B33E98D00A68F6686 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C283919E1D414D3760E4737BD3BE989 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449815399B3AB411AD5BD3669399D554 /* Foundation.framework in Frameworks */,
+				3D262301C85175CBFD2EC585DF938B75 /* SVProgressHUD.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91B1A6A6C859581467E3D05E254B0D72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32E8ED0E4711B4843A4F90F23EDC276 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE52E2F1ADF166D3CECF270D361D7C8D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		047AFA786A7A39DDD3DCBC10A6834764 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC8881674BF98CC7BA5C4DF6E23AAC59 /* Pods-HaidoraProgressHUDManager_Example */,
+				EF0339EF6FC761F2C2E9C19DC95FFB93 /* Pods-HaidoraProgressHUDManager_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		05F2D60C3C3D5EB7CF2459EE12145B0E /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				581058A2BDFC3E152E25568CB63D1AA4 /* SVIndefiniteAnimatedView.h */,
+				579DD9D38E41C18B2F64F3CFA87C91B6 /* SVIndefiniteAnimatedView.m */,
+				3E705C113EFE3BE631AFE26BB982A106 /* SVProgressHUD.h */,
+				6342EF42A636CDEB45DD4CCB631C3691 /* SVProgressHUD.m */,
+				AB3D1D96E128481709885CAC7DB4D229 /* Resources */,
+				A7C45D2B50C5FEC74E8ECDBF8EEF125E /* Support Files */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		0870C957C8E8B557E3C657344B60654B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				222B9B0327637971894449A97DA606C6 /* SVProgressHUD.framework */,
+				61B49B0297F2E3163DC80AE3DF812F1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1ACE949C4CCC1A849B734E9A47479731 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B7539B58402B9C56C0EF6772DC8B712A /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		1D4BF6E369EE80C559BEE3E9D995DC9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C731E45859C7FB042E861E3C2566CB7A /* HaidoraProgressHUDManager.bundle */,
+				659D8B073C6647B2A8FD62969A97D1B2 /* HaidoraProgressHUDManager.framework */,
+				FEB719CC7B7F7942A30B8B1C6440D0AA /* Pods_HaidoraProgressHUDManager_Example.framework */,
+				C8FB9CC1AD7E2179F41EC5F7C25DDE10 /* Pods_HaidoraProgressHUDManager_Tests.framework */,
+				7DE1E75AEFB975E915AE6662BF68FC41 /* SVProgressHUD.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49E3C22908AD19F36A4057A4BE9D5267 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F185ECD102F6F3A9E770A34940A5594C /* HUDManager.swift */,
+				22B7B07D74CD84CAC533606931BB078B /* HUDType.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		53D603C5B75CEB481B754F41D1D05DE8 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5FB4AE71E88CEA35FCB2A41ADDD7B3A /* HaidoraProgressHUDManager */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		61B49B0297F2E3163DC80AE3DF812F1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7C00C70E7EB8A1BAA709F6A57DAC2E40 /* Foundation.framework */,
+				CCB31E5AF8107D9D1643EE0B8E9225D7 /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				53D603C5B75CEB481B754F41D1D05DE8 /* Development Pods */,
+				0870C957C8E8B557E3C657344B60654B /* Frameworks */,
+				E19BB65A0199ECFF4E4340E5D6E62384 /* Pods */,
+				1D4BF6E369EE80C559BEE3E9D995DC9A /* Products */,
+				047AFA786A7A39DDD3DCBC10A6834764 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9C566FD35A149D94146555273A04CC43 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				73354C6C868A0D8F5CECB14479BBC47F /* SVProgressHUD+HUDType.swift */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		9CD59680D1FA86675B88706C04CAD3C4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BE24DC78C8449053A8B7102522B56E7 /* HaidoraProgressHUDManager.modulemap */,
+				346362F612249EC468B1EC5F96EE50AE /* HaidoraProgressHUDManager.xcconfig */,
+				41D3BF97790E3E98E71BA27D99192484 /* HaidoraProgressHUDManager-dummy.m */,
+				7FA0DED0E2709E060CD3B6892844E549 /* HaidoraProgressHUDManager-prefix.pch */,
+				DA9D556CB938775E51D7875F85301989 /* HaidoraProgressHUDManager-umbrella.h */,
+				89711DB3FD0210DFAEDA93299DC6757B /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HaidoraProgressHUDManager";
+			sourceTree = "<group>";
+		};
+		A7C45D2B50C5FEC74E8ECDBF8EEF125E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				65400C3EE944597103E60D24A2830BE8 /* Info.plist */,
+				8B79104D0B18E2B8AB17DAECF3EFA371 /* SVProgressHUD.modulemap */,
+				DE0B20A3000B598818CABA2873591C4E /* SVProgressHUD.xcconfig */,
+				186F271C6E68F44594F88CE102849823 /* SVProgressHUD-dummy.m */,
+				17DA3E4D8E095257AFFA0E5A270E2DE4 /* SVProgressHUD-prefix.pch */,
+				92A91D14862B4D30DB13B14CD2B4E6A7 /* SVProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
+			sourceTree = "<group>";
+		};
+		AB3D1D96E128481709885CAC7DB4D229 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B7DCEFCC4D3DAD9AE7D0DAFDE70AD64D /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B7539B58402B9C56C0EF6772DC8B712A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				49E3C22908AD19F36A4057A4BE9D5267 /* Core */,
+				9C566FD35A149D94146555273A04CC43 /* SVProgressHUD */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E19BB65A0199ECFF4E4340E5D6E62384 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05F2D60C3C3D5EB7CF2459EE12145B0E /* SVProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E5FB4AE71E88CEA35FCB2A41ADDD7B3A /* HaidoraProgressHUDManager */ = {
+			isa = PBXGroup;
+			children = (
+				1ACE949C4CCC1A849B734E9A47479731 /* Pod */,
+				9CD59680D1FA86675B88706C04CAD3C4 /* Support Files */,
+			);
+			name = HaidoraProgressHUDManager;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		EF0339EF6FC761F2C2E9C19DC95FFB93 /* Pods-HaidoraProgressHUDManager_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0C033C27702A45267062D9E1AE213392 /* Info.plist */,
+				00F8C9E63F53803BA1982F3C3ACECDC1 /* Pods-HaidoraProgressHUDManager_Tests.modulemap */,
+				568443D4FB5E65296A6B5BFBBE846C6C /* Pods-HaidoraProgressHUDManager_Tests-acknowledgements.markdown */,
+				5F74BCB1B1DFCCF1F6F8F8BC614314FD /* Pods-HaidoraProgressHUDManager_Tests-acknowledgements.plist */,
+				865146E6716CBBD6B71BE4E3D2454363 /* Pods-HaidoraProgressHUDManager_Tests-dummy.m */,
+				CD2D243CA59FBD4CE368D33EC049BA65 /* Pods-HaidoraProgressHUDManager_Tests-frameworks.sh */,
+				45CD2DEF53D36B85F7512A68891AED0F /* Pods-HaidoraProgressHUDManager_Tests-resources.sh */,
+				08828059B64CD3A5F919A8C030591129 /* Pods-HaidoraProgressHUDManager_Tests-umbrella.h */,
+				CE3ECDCD8EB918D941ABB399D6DEE449 /* Pods-HaidoraProgressHUDManager_Tests.debug.xcconfig */,
+				14D2B478F9D74F34CBD3025802C06A0B /* Pods-HaidoraProgressHUDManager_Tests.release.xcconfig */,
+			);
+			name = "Pods-HaidoraProgressHUDManager_Tests";
+			path = "Target Support Files/Pods-HaidoraProgressHUDManager_Tests";
+			sourceTree = "<group>";
+		};
+		FC8881674BF98CC7BA5C4DF6E23AAC59 /* Pods-HaidoraProgressHUDManager_Example */ = {
+			isa = PBXGroup;
+			children = (
+				27C6326298E35DA2CD62003C729A31C4 /* Info.plist */,
+				F31271685C742A979E1763D7EDF727A1 /* Pods-HaidoraProgressHUDManager_Example.modulemap */,
+				0CC6624CAF76C66C4ED1D314731B7F3A /* Pods-HaidoraProgressHUDManager_Example-acknowledgements.markdown */,
+				73CBF8763CD85F8CBA48EA2D51BC08E0 /* Pods-HaidoraProgressHUDManager_Example-acknowledgements.plist */,
+				9CB39764C502A67C1F4C1BF6A599A234 /* Pods-HaidoraProgressHUDManager_Example-dummy.m */,
+				CEF4533C96355439CE0E9C1FC2B1EFF3 /* Pods-HaidoraProgressHUDManager_Example-frameworks.sh */,
+				8EF5C336D7ADB21FF90C40F92184563C /* Pods-HaidoraProgressHUDManager_Example-resources.sh */,
+				E3746DC9DD0287BC5FB3083025FAC14F /* Pods-HaidoraProgressHUDManager_Example-umbrella.h */,
+				9D7768B03693B4921AF058DA3870F607 /* Pods-HaidoraProgressHUDManager_Example.debug.xcconfig */,
+				5054EE6B5A2861C5116A7D73D7DCE261 /* Pods-HaidoraProgressHUDManager_Example.release.xcconfig */,
+			);
+			name = "Pods-HaidoraProgressHUDManager_Example";
+			path = "Target Support Files/Pods-HaidoraProgressHUDManager_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4F811A1FFA04324B364C8D0CBD98EA7C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C25D67CED3C320685529B7379745F92 /* Pods-HaidoraProgressHUDManager_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		880771D9A42A01E25DA2DB3229F40FA5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C514F8DE562CAD9094C5A114DDFA612 /* Pods-HaidoraProgressHUDManager_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BFB5285823AF998203A57C1887CD9AD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49BC6DD7E0BBD296266D92C6BE771C19 /* HaidoraProgressHUDManager-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC283EF66FC7E2187B28ECAB74807045 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C69E5E2A821D2A1813425A8C056A79E /* SVIndefiniteAnimatedView.h in Headers */,
+				E6FC0B9A2A83F8749B03640E2776BA6B /* SVProgressHUD-umbrella.h in Headers */,
+				B9EC1202DC4718BDD6BDBD87E44497F5 /* SVProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		453642B2B3DF22C4D2FAE9592A0A2F14 /* HaidoraProgressHUDManager-HaidoraProgressHUDManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDC12D98E9E861AE9BF26EBA012B9DEF /* Build configuration list for PBXNativeTarget "HaidoraProgressHUDManager-HaidoraProgressHUDManager" */;
+			buildPhases = (
+				4E12A79693FA8CFFB2B99F563E12D412 /* Sources */,
+				91B1A6A6C859581467E3D05E254B0D72 /* Frameworks */,
+				816495062549A3913104000FFF0A0E77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HaidoraProgressHUDManager-HaidoraProgressHUDManager";
+			productName = "HaidoraProgressHUDManager-HaidoraProgressHUDManager";
+			productReference = C731E45859C7FB042E861E3C2566CB7A /* HaidoraProgressHUDManager.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		4F6978C227DC3BCC1814E491C8CF8476 /* Pods-HaidoraProgressHUDManager_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F64C370BFEAC65B401DAEF19F56E3FE /* Build configuration list for PBXNativeTarget "Pods-HaidoraProgressHUDManager_Example" */;
+			buildPhases = (
+				4EB3FA069CCB7FB67325A5EA5D5EE736 /* Sources */,
+				F32E8ED0E4711B4843A4F90F23EDC276 /* Frameworks */,
+				4F811A1FFA04324B364C8D0CBD98EA7C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DF9E3A3EC29CD9969D3076C2DBDDB1C /* PBXTargetDependency */,
+				D665E12A1EEBFC5453CF15E7EE1C3602 /* PBXTargetDependency */,
+			);
+			name = "Pods-HaidoraProgressHUDManager_Example";
+			productName = "Pods-HaidoraProgressHUDManager_Example";
+			productReference = FEB719CC7B7F7942A30B8B1C6440D0AA /* Pods_HaidoraProgressHUDManager_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		89408A66C39F32DD7BC86603F5B2AAA5 /* HaidoraProgressHUDManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91A3ECF65C48B6032B4FD2EF43381037 /* Build configuration list for PBXNativeTarget "HaidoraProgressHUDManager" */;
+			buildPhases = (
+				9671EADB785AFCAF83964EB6CC65A683 /* Sources */,
+				8C283919E1D414D3760E4737BD3BE989 /* Frameworks */,
+				8F55677AB6B84B6CA08E5B1E2D46CFD5 /* Resources */,
+				9BFB5285823AF998203A57C1887CD9AD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C51E6135460411BC5DFBB1142FFA569A /* PBXTargetDependency */,
+				99543F500DD9C1DF2B329BE9DA8A224E /* PBXTargetDependency */,
+			);
+			name = HaidoraProgressHUDManager;
+			productName = HaidoraProgressHUDManager;
+			productReference = 659D8B073C6647B2A8FD62969A97D1B2 /* HaidoraProgressHUDManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E5B579623B7EE0963F9C5B130BD23B35 /* SVProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F70ABAFB1D32A65D1B3136AC535468A /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildPhases = (
+				E3FF2E7D471BA1F04C58DEDD67087965 /* Sources */,
+				8343AF2049191D2538FD24C64D6712B6 /* Frameworks */,
+				DC283EF66FC7E2187B28ECAB74807045 /* Headers */,
+				1D8C297C99602B9440EC8AB0F0C5ECFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = 7DE1E75AEFB975E915AE6662BF68FC41 /* SVProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F3703ABC21405F6EC0028C5DC3F429EE /* Pods-HaidoraProgressHUDManager_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81983AA748627C1ED0258819AABFB908 /* Build configuration list for PBXNativeTarget "Pods-HaidoraProgressHUDManager_Tests" */;
+			buildPhases = (
+				8889E82437D4CAC25101259786E53A2B /* Sources */,
+				4BDC5401856FC4A11F102912C4BB40E2 /* Frameworks */,
+				880771D9A42A01E25DA2DB3229F40FA5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60709BE9D6148B33CD2B9EF3C700B42F /* PBXTargetDependency */,
+				AFE68C213646E508F8477C436289FD2F /* PBXTargetDependency */,
+			);
+			name = "Pods-HaidoraProgressHUDManager_Tests";
+			productName = "Pods-HaidoraProgressHUDManager_Tests";
+			productReference = C8FB9CC1AD7E2179F41EC5F7C25DDE10 /* Pods_HaidoraProgressHUDManager_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 1D4BF6E369EE80C559BEE3E9D995DC9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89408A66C39F32DD7BC86603F5B2AAA5 /* HaidoraProgressHUDManager */,
+				453642B2B3DF22C4D2FAE9592A0A2F14 /* HaidoraProgressHUDManager-HaidoraProgressHUDManager */,
+				4F6978C227DC3BCC1814E491C8CF8476 /* Pods-HaidoraProgressHUDManager_Example */,
+				F3703ABC21405F6EC0028C5DC3F429EE /* Pods-HaidoraProgressHUDManager_Tests */,
+				E5B579623B7EE0963F9C5B130BD23B35 /* SVProgressHUD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D8C297C99602B9440EC8AB0F0C5ECFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63D31F81C20E1DBD232CFA033E2235C8 /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		816495062549A3913104000FFF0A0E77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F55677AB6B84B6CA08E5B1E2D46CFD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1CF638D420918A3CDC874315F135642 /* HaidoraProgressHUDManager.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E12A79693FA8CFFB2B99F563E12D412 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EB3FA069CCB7FB67325A5EA5D5EE736 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C93A14B140CDDB9954C22327427EF986 /* Pods-HaidoraProgressHUDManager_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8889E82437D4CAC25101259786E53A2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30871730DF6F04494FFDB883451E1B35 /* Pods-HaidoraProgressHUDManager_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9671EADB785AFCAF83964EB6CC65A683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEE9CD57C5E1BD8A5FB270A13498937D /* HaidoraProgressHUDManager-dummy.m in Sources */,
+				8B9F128A740B1B70A65B5BC45BD7D43A /* HUDManager.swift in Sources */,
+				22C680F80D578C036CF300FCC9B881AD /* HUDType.swift in Sources */,
+				4C395E0323E23F84DA3D6C019D1188A8 /* SVProgressHUD+HUDType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3FF2E7D471BA1F04C58DEDD67087965 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F26DA1574D941E4AD5A8150EC10F145 /* SVIndefiniteAnimatedView.m in Sources */,
+				4997D897D34F01C296B9983F67713BD4 /* SVProgressHUD-dummy.m in Sources */,
+				0557F00239885AEF8CC9CF95C95D170B /* SVProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DF9E3A3EC29CD9969D3076C2DBDDB1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HaidoraProgressHUDManager;
+			target = 89408A66C39F32DD7BC86603F5B2AAA5 /* HaidoraProgressHUDManager */;
+			targetProxy = 57EC026EDE2E95A9A22C0D937B799970 /* PBXContainerItemProxy */;
+		};
+		60709BE9D6148B33CD2B9EF3C700B42F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HaidoraProgressHUDManager;
+			target = 89408A66C39F32DD7BC86603F5B2AAA5 /* HaidoraProgressHUDManager */;
+			targetProxy = 54DC43EE44E95C0026DEC73038DBA97D /* PBXContainerItemProxy */;
+		};
+		99543F500DD9C1DF2B329BE9DA8A224E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = E5B579623B7EE0963F9C5B130BD23B35 /* SVProgressHUD */;
+			targetProxy = C4EC85169AB71BEDE34E88DFAABDFD16 /* PBXContainerItemProxy */;
+		};
+		AFE68C213646E508F8477C436289FD2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = E5B579623B7EE0963F9C5B130BD23B35 /* SVProgressHUD */;
+			targetProxy = 0BDC661694E3C1D1368755BCB5181C71 /* PBXContainerItemProxy */;
+		};
+		C51E6135460411BC5DFBB1142FFA569A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "HaidoraProgressHUDManager-HaidoraProgressHUDManager";
+			target = 453642B2B3DF22C4D2FAE9592A0A2F14 /* HaidoraProgressHUDManager-HaidoraProgressHUDManager */;
+			targetProxy = 33F0B1C37793700FDF03222C9D5A696B /* PBXContainerItemProxy */;
+		};
+		D665E12A1EEBFC5453CF15E7EE1C3602 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = E5B579623B7EE0963F9C5B130BD23B35 /* SVProgressHUD */;
+			targetProxy = F29FA2A276B44B50C41A7D0B130604A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26D66BB92BEE45D6BC8BDB2853F6EC5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D7768B03693B4921AF058DA3870F607 /* Pods-HaidoraProgressHUDManager_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HaidoraProgressHUDManager_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HaidoraProgressHUDManager_Example/Pods-HaidoraProgressHUDManager_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_HaidoraProgressHUDManager_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4D3E44D9B25858E9B816FFCDEF01F27C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 346362F612249EC468B1EC5F96EE50AE /* HaidoraProgressHUDManager.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HaidoraProgressHUDManager/HaidoraProgressHUDManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HaidoraProgressHUDManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HaidoraProgressHUDManager/HaidoraProgressHUDManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = HaidoraProgressHUDManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		62C03D8AA699882C77B41656D390F6E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 346362F612249EC468B1EC5F96EE50AE /* HaidoraProgressHUDManager.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = HaidoraProgressHUDManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6A3DA76996842D7F0F40C9535C0662DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 346362F612249EC468B1EC5F96EE50AE /* HaidoraProgressHUDManager.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = HaidoraProgressHUDManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		6B268F4E3FF63BB9DE0CF75A469B31AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE0B20A3000B598818CABA2873591C4E /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6C30FF3937C19CD44EE09A06BE5EE2B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE3ECDCD8EB918D941ABB399D6DEE449 /* Pods-HaidoraProgressHUDManager_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HaidoraProgressHUDManager_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HaidoraProgressHUDManager_Tests/Pods-HaidoraProgressHUDManager_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_HaidoraProgressHUDManager_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7ADCC7697B4E926576F503417B3C2223 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE0B20A3000B598818CABA2873591C4E /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BA859271113F3A30CBD97FC1759D3C01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 346362F612249EC468B1EC5F96EE50AE /* HaidoraProgressHUDManager.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HaidoraProgressHUDManager/HaidoraProgressHUDManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HaidoraProgressHUDManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HaidoraProgressHUDManager/HaidoraProgressHUDManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HaidoraProgressHUDManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D3FE2A9D0F8226B2470116B926AAC5B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5054EE6B5A2861C5116A7D73D7DCE261 /* Pods-HaidoraProgressHUDManager_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HaidoraProgressHUDManager_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HaidoraProgressHUDManager_Example/Pods-HaidoraProgressHUDManager_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_HaidoraProgressHUDManager_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D874C32744EAB115341FEE839FD977D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14D2B478F9D74F34CBD3025802C06A0B /* Pods-HaidoraProgressHUDManager_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HaidoraProgressHUDManager_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HaidoraProgressHUDManager_Tests/Pods-HaidoraProgressHUDManager_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_HaidoraProgressHUDManager_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F70ABAFB1D32A65D1B3136AC535468A /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ADCC7697B4E926576F503417B3C2223 /* Debug */,
+				6B268F4E3FF63BB9DE0CF75A469B31AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81983AA748627C1ED0258819AABFB908 /* Build configuration list for PBXNativeTarget "Pods-HaidoraProgressHUDManager_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C30FF3937C19CD44EE09A06BE5EE2B9 /* Debug */,
+				D874C32744EAB115341FEE839FD977D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91A3ECF65C48B6032B4FD2EF43381037 /* Build configuration list for PBXNativeTarget "HaidoraProgressHUDManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D3E44D9B25858E9B816FFCDEF01F27C /* Debug */,
+				BA859271113F3A30CBD97FC1759D3C01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F64C370BFEAC65B401DAEF19F56E3FE /* Build configuration list for PBXNativeTarget "Pods-HaidoraProgressHUDManager_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26D66BB92BEE45D6BC8BDB2853F6EC5C /* Debug */,
+				D3FE2A9D0F8226B2470116B926AAC5B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDC12D98E9E861AE9BF26EBA012B9DEF /* Build configuration list for PBXNativeTarget "HaidoraProgressHUDManager-HaidoraProgressHUDManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62C03D8AA699882C77B41656D390F6E0 /* Debug */,
+				6A3DA76996842D7F0F40C9535C0662DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
