@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "HaidoraProgressHUDManager"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "A wrapper for progress hud."
   s.description      = <<-DESC
                       A wrapper for progress hud,only one api for progress hud.
@@ -14,7 +14,6 @@ Pod::Spec.new do |s|
   
   s.subspec 'Core' do |core|
       core.source_files = 'Pod/Classes/*'
-      core.dependency 'Aspects'
   end
   
   s.subspec 'SVProgressHUD' do |svprogressHUD|
